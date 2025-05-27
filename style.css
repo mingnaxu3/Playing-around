@@ -1,0 +1,37 @@
+.galindo-regular {
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p { 
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 25px;
+  margin: 50px;
+  font-family: 'Galindo', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: #FCB3DC;
+  border-radius: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 366px;
+  height: 108px;
+  align-items: center;
+  position: absolute;
+  left:500px;
+  top: 300px;
+
+}
+.name-tag{
+  font-family: 'Galindo', sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-top: 690px;
+}
+
