@@ -7,6 +7,9 @@
 html,body{
   background-color: #C5E9FF;
 }
+.button-movement{
+  max-width: 1000px;
+}
 
 button{
   background-color: #FFEBB0;
@@ -18,25 +21,31 @@ button{
   text-align: center;
   position: absolute;
   font-size: 100px;
-  left: 700px;
-  top: 350px;
+  left: 685px;
+  top: -200px;
+  animation: button-animation forwards linear, twinkle infinite linear;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  z-index: 100;
 }
 button:hover{
   background-color: #FFDC73;
 }
 button:active{
   background-color:#FFEBB0;
-  box-shadow: 0, 5px, #999;
-  transform: translateY(4px);
+  box-shadow: 0, 30px, #999; 
+  transform: translateY(39px);
 }
 .envelope-area {
   background-color: #FCB3DC;
   width: 680px;
   height: 430px;
   border-radius: 24px;
-  margin: 400px;
+  /* margin: 400px; */
   margin-top: 200px;
   z-index: 1;
+  animation: animate forwards linear;
+  animation-duration: 0.5s;
 
 }
 .top-envelope{
@@ -46,10 +55,39 @@ button:active{
   border-radius: 24px;
   /* clip-path: polygon(51% 7%, 0% 100%, 100% 100%); */
   background: url('enevlope-top.svg') no-repeat center;
-  margin: 400px;
-  margin-top: -875px;
-  x: 400px;
-  y: -200px;
+  animation: animate forwards linear;
+  animation-duration: 0.5s;
+  margin-top: -472px;
 
   
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(400px);
+    opacity: 1;
+  }
+}
+@keyframes button-animation {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(560px);
+    opacity: 1;
+  }
+
+}
+@keyframes twinkle{
+   0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,72 @@
+.galindo-regular {
+  font-family: "Galindo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,body{
+  background-color: #C5E9FF;
+}
+.button-movement{
+  max-width: 1000px;
+}
+
+
+.envelope-area {
+  background-color: #FCB3DC;
+  width: 520px;
+  height: 320px;
+  border-radius: 24px;
+  margin: 400px;
+  margin-top: 200px;
+  z-index: 1;
+  
+
+}
+.top-envelope{
+  background-color: #FF8686;
+  width: 520px;
+  height: 320px;
+  border-radius: 24px;
+  /* clip-path: polygon(51% 7%, 0% 100%, 100% 100%); */
+  background: url('open-top.svg') no-repeat center;
+  margin: 400px;
+  margin-top: -950px;
+
+}
+.inner-envelope{
+  background-color: #FF8686;
+  width: 520px;
+  height: 320px;
+  border-radius: 24px;
+  /* clip-path: polygon(51% 7%, 0% 100%, 100% 100%); */
+  background: url('inside.svg') no-repeat center;
+  margin: 400px;
+  margin-top: -550px;
+}
+.letter-content{
+  font-family: 'Galindo';
+  background-color: #FFF8E4;
+  width: 330px;
+  height: 410px;
+  border-radius: 16px;
+  position: absolute;
+  margin: 470px;
+  margin-top: -1100px;
+  text-align: center;
+  padding: 2%;
+  font-size: 30px;
+  animation: button-animation forwards linear;
+  animation-duration: 2s;
+}
+
+@keyframes button-animation {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(250px);
+    opacity: 1;
+  }
+}
