@@ -15,7 +15,7 @@ button {
   font-family: 'Galindo', sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
-  background-color: #FCB3DC;
+  background-color: #FF9A00;
   border-radius: 24px;
   box-sizing: border-box;
   box-shadow: 0 9px #999;
@@ -30,13 +30,13 @@ button {
 
 }
 button:hover{
-  background-color: #FF82C9;
+  background-color: #E34C22;
   color: white;
 
 }
 
 button:active {
-  background-color: #FCB3DC;
+  background-color: #FF9A00;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -53,7 +53,7 @@ html,
 body {
   overscroll-behavior-x: none;
   overscroll-behavior-y: none;
-  background-color: #C5E9FF;
+  background-color: #98D13F;
   max-height: 800vh;
   
 }
@@ -85,7 +85,7 @@ body {
   border-color: #FFE599;
   border-width: 5px;
   background: url('star.svg') no-repeat center;
-  animation: twinkle 1.5s infinite ease-in-out, animate infinite linear; 
+  animation: animate infinite linear; 
   top: -150px;
 }
 .stars-area li:nth-child(1){
@@ -93,7 +93,9 @@ body {
   width: 100px;
   height: 100px;
   animation-duration: 4s;
+  background: url(cactus.svg) no-repeat center;
   animation-delay: 0s;
+  
   
 }
 .stars-area li:nth-child(2){
@@ -102,7 +104,7 @@ body {
   height: 100px;
   animation-duration: 6s;
   animation-delay: 1s;
-
+   background: url(wrestler.svg) no-repeat center;
 }
 .stars-area li:nth-child(3){
   left: 24%;
@@ -111,6 +113,7 @@ body {
   animation-duration: 5s;
   animation-delay: 2s;
   border-radius: 50%;
+   background: url(bot.svg) no-repeat center;
 }
 .stars-area li:nth-child(4){
   left: 85%;
@@ -119,6 +122,7 @@ body {
   animation-duration: 5s;
   animation-delay: 3s;
   border-radius: 50%;
+   background: url(wrestler.svg) no-repeat center;
 }
 .stars-area li:nth-child(5){
   left: 58%;
@@ -127,6 +131,7 @@ body {
   animation-duration: 6s;
   animation-delay: 4s;
   border-radius: 50%;
+   background: url(wrestler.svg) no-repeat center;
 }
 .stars-area li:nth-child(6){
   left: 34%;
@@ -134,6 +139,7 @@ body {
   height: 100px;
   animation-duration: 7s;
   animation-delay: 5s;
+   background: url(wrestler.svg) no-repeat center;
 
 }
 .stars-area li:nth-child(7){
@@ -142,6 +148,7 @@ body {
   height: 100px;
   animation-duration: 8s;
   animation-delay: 6s;
+   background: url(cactus.svg) no-repeat center;
   
 }
 .stars-area li:nth-child(8){
@@ -150,6 +157,7 @@ body {
   height: 100px;
   animation-duration: 9s;
   animation-delay: 4s;
+   background: url(bot.svg) no-repeat center;
   
 }
 .stars-area li:nth-child(9){
@@ -158,6 +166,7 @@ body {
   height: 100px;
   animation-duration: 10s;
   animation-delay: 0s;
+   background: url(wrestler.svg) no-repeat center;
   
 }
 .stars-area li:nth-child(10){
@@ -166,6 +175,7 @@ body {
   height: 100px;
   animation-duration: 11s;
   animation-delay: 1s;
+   background: url(cactus.svg) no-repeat center;
 
 }
 .stars-area li:nth-child(11){
@@ -174,6 +184,7 @@ body {
   height: 100px;
   animation-duration: 11s;
   animation-delay: 2s;
+  background: url(cactus.svg) no-repeat center;
 
 }
 .stars-area li:nth-child(12){
@@ -182,6 +193,7 @@ body {
   height: 100px;
   animation-duration: 11s;
   animation-delay: 3s;
+   background: url(bot.svg) no-repeat center;
 
 }
 .stars-area li:nth-child(13){
@@ -190,6 +202,7 @@ body {
   height: 100px;
   animation-duration: 4s;
   animation-delay: 1s;
+   background: url(bot.svg) no-repeat center;
 }
 .stars-area li:nth-child(14){
   left: 27%;
@@ -197,6 +210,8 @@ body {
   height: 100px;
   animation-duration: 3.45s;
   animation-delay: 0s;
+  background: url(cactus.svg) no-repeat center;
+   
 
 }
 .stars-area li:nth-child(15){
@@ -205,6 +220,7 @@ body {
   height: 100px;
   animation-duration: 4.56s;
   animation-delay: 4s;
+  background: url(cactus.svg) no-repeat center;
  
 }
 .stars-area li:nth-child(16){
@@ -213,6 +229,7 @@ body {
   height: 100px;
   animation-duration: 3.45s;
   animation-delay: 14s;
+  background: url(cactus.svg) no-repeat center;
  
 }
 
@@ -225,14 +242,14 @@ body {
   }
   100% {
     transform: translateY(900px);
-    opacity: 0;
+    opacity: 1;
   }
 }
-@keyframes twinkle {
+/* @keyframes twinkle {
   0%, 100% {
     opacity: 0.5;
   }
   50% {
     opacity: 1;
   }
-}
+} */
